@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
     
     }
 
-    const webhookURL = 'https://ibraheem123.app.n8n.cloud/webhook/generate-recipe'
+    const webhookURL = 'https://ibraheem123.app.n8n.cloud/webhook/culinify'
 
     const response = await fetch(webhookURL, {
       method: 'POST',
