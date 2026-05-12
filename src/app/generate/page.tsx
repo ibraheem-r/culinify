@@ -96,6 +96,8 @@ export default function GeneratePage() {
     }
   }
 
+
+  
   const handleCopy = () => {
     if (generatedRecipe) {
       navigator.clipboard.writeText(generatedRecipe)
