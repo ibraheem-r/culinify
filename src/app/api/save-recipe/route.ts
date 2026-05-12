@@ -5,7 +5,7 @@ const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 )
-
+/*check*/
 export async function POST(req: NextRequest) {
   const { userId, recipe } = await req.json()
 
@@ -19,6 +19,7 @@ export async function POST(req: NextRequest) {
 
   if (error) {
     return NextResponse.json({ error: error.message }, { status: 500 })
+    return;
   }
 
   return NextResponse.json({ message: 'Recipe saved successfully' })
