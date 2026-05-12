@@ -44,6 +44,7 @@ export default function HistoryPage() {
     setLoading(false)
   }
 
+  
   useEffect(() => {
     fetchRecipes()
   }, [])
